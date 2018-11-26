@@ -19,49 +19,49 @@ const datas = [
   {
     name: "Beranda",
     route: "Anatomy",
-    icon: "phone-portrait",
+    icon: "home",
     bg: "#C5F442"
   },
   {
     name: "Kategori",
     route: "Anatomy",
-    icon: "phone-portrait",
+    icon: "grid",
     bg: "#C5F442"
   },
   {
     name: "Pesanan Saya",
     route: "Anatomy",
-    icon: "phone-portrait",
+    icon: "cart",
     bg: "#C5F442"
   },
   {
     name: "Pemberitahuan",
     route: "Anatomy",
-    icon: "phone-portrait",
+    icon: "exclamation",
     bg: "#C5F442"
   },
   {
     name: "Favorit",
     route: "Anatomy",
-    icon: "phone-portrait",
+    icon: "heart",
     bg: "#C5F442"
   },
   {
     name: "Profil",
     route: "Anatomy",
-    icon: "phone-portrait",
+    icon: "md-person",
     bg: "#C5F442"
   },
   {
     name: "My Toko",
     route: "Anatomy",
-    icon: "phone-portrait",
+    icon: "home",
     bg: "#C5F442"
   },
   {
     name: "About Us",
     route: "Anatomy",
-    icon: "phone-portrait",
+    icon: "md-people",
     bg: "#C5F442"
   },
   // {
