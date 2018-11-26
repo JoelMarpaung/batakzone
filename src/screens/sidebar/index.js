@@ -55,7 +55,7 @@ const datas = [
   {
     name: "My Toko",
     route: "Anatomy",
-    icon: "home",
+    icon: "outlet",
     bg: "#C5F442"
   },
   {
