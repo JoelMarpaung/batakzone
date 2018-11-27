@@ -1,3 +1,5 @@
+import Transparent from "../button/transparent";
+
 const React = require("react-native");
 const { Dimensions, Platform } = React;
 const deviceHeight = Dimensions.get("window").height;
@@ -27,5 +29,18 @@ export default {
   },
   header:{
     backgroundColor: "#8E171B"
+  },
+  searchBar:{
+    backgroundColor:"transparent"
+  },
+  mb:{
+    flex: 0
+  },
+  icon:{
+    marginLeft:10,
+    padding:50
+  },
+  iconItem:{
+    padding:50
   }
 };
