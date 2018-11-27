@@ -83,7 +83,7 @@ class Home extends Component {
             <Card>
             <Row style={styles.icon}>
               <CardItem style={styles.iconItem}>
-                <Text>1</Text>
+                <Text></Text>
               </CardItem>
               <CardItem style={styles.iconItem}>
                 <Text>2</Text>
