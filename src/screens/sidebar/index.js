@@ -18,51 +18,51 @@ const drawerImage = require("../../../assets/logo-kitchen-sink.png");
 const datas = [
   {
     name: "Beranda",
-    route: "Anatomy",
-    icon: "phone-portrait",
-    bg: "#C5F442"
+    route: "Home",
+    icon: "home",
+    bg: "#8E171B"
   },
   {
     name: "Kategori",
     route: "Anatomy",
-    icon: "phone-portrait",
-    bg: "#C5F442"
+    icon: "grid",
+    bg: "#8E171B"
   },
   {
     name: "Pesanan Saya",
     route: "Anatomy",
-    icon: "phone-portrait",
-    bg: "#C5F442"
+    icon: "cart",
+    bg: "#8E171B"
   },
   {
     name: "Pemberitahuan",
     route: "Anatomy",
-    icon: "phone-portrait",
-    bg: "#C5F442"
+    icon: "notifications",
+    bg: "#8E171B"
   },
   {
     name: "Favorit",
     route: "Anatomy",
-    icon: "phone-portrait",
-    bg: "#C5F442"
+    icon: "star",
+    bg: "#8E171B"
   },
   {
     name: "Profil",
-    route: "Anatomy",
-    icon: "phone-portrait",
-    bg: "#C5F442"
+    route: "Login",
+    icon: "person",
+    bg: "#8E171B"
   },
   {
     name: "My Toko",
     route: "Anatomy",
-    icon: "phone-portrait",
-    bg: "#C5F442"
+    icon: "outlet",
+    bg: "#8E171B"
   },
   {
     name: "About Us",
     route: "Anatomy",
-    icon: "phone-portrait",
-    bg: "#C5F442"
+    icon: "people",
+    bg: "#8E171B"
   },
   // {
   //   name: "Anatomy",

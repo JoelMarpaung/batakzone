@@ -36,7 +36,14 @@ class Home extends Component {
           <Body>
             <Title>BatakZone</Title>
           </Body>
-          <Right />
+          <Right>
+              <Button transparent onPress={()=>this.props.navigation.navigate("DrawerOpen")}>
+                <Icon name="search"/>
+              </Button>
+              <Button transparent onPress={()=>this.props.navigation.navigate("DrawerOpen")}>
+                <Icon name="cart"/>
+              </Button>
+          </Right>
         </Header>
 
         <Content>
