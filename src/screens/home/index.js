@@ -56,6 +56,15 @@ class Home extends Component {
             <Title>BatakZone</Title>
           </Body>
           <Right>
+<<<<<<< HEAD
+              <Button transparent onPress={()=>this.props.navigation.navigate("DrawerOpen")}>
+                <Icon name="search"/>
+              </Button>
+              <Button transparent onPress={()=>this.props.navigation.navigate("DrawerOpen")}>
+                <Icon name="cart"/>
+              </Button>
+          </Right>
+=======
             <Button transparent>
               <Icon active name="cart"/>
             </Button>
@@ -71,6 +80,7 @@ class Home extends Component {
           <Button transparent>
             <Text>Pencarian</Text>
           </Button>
+>>>>>>> ecb18ad2faad9fcebd0bebe769360e6c6c964247
         </Header>
 
         <Content padder>

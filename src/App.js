@@ -107,6 +107,9 @@ import AccordionIcon from "./screens/accordion/accordion-icon";
 import AccordionIconStyle from "./screens/accordion/accordion-icon-style";
 import AccordionHeaderContentStyle from "./screens/accordion/accordion-header-content-style";
 import AccordionCustomHeaderContent from "./screens/accordion/accordion-custom-header-content";
+import Profile from "./screens/form/profil";
+import Login from "./screens/form/login";
+import Register from "./screens/form/register"
 
 import Home from "./screens/home/";
 import Anatomy from "./screens/anatomy/";
@@ -226,6 +229,9 @@ const AppNavigator = StackNavigator(
 
     FixedLabel: { screen: FixedLabel },
     InlineLabel: { screen: InlineLabel },
+    Profile: {screen:Profile},
+    Login: {screen:Login},
+    Register: {screen:Register},
     FloatingLabel: { screen: FloatingLabel },
     PlaceholderLabel: { screen: PlaceholderLabel },
     StackedLabel: { screen: StackedLabel },
