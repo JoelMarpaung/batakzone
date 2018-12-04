@@ -25,7 +25,7 @@ const toko = require("../../../assets/toko.png");
 const profil = require("../../../assets/contacts/sanket.png");
 
 const data = {
-  shop: "#",
+  shop: "myToko",
   edit: "#"
 };
 class Profile extends Component {

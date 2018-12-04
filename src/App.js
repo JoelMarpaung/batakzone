@@ -109,7 +109,8 @@ import AccordionHeaderContentStyle from "./screens/accordion/accordion-header-co
 import AccordionCustomHeaderContent from "./screens/accordion/accordion-custom-header-content";
 import Profile from "./screens/form/profil";
 import Login from "./screens/form/login";
-import Register from "./screens/form/register"
+import Register from "./screens/form/register";
+import myToko from "./screens/toko/myToko";
 
 import Home from "./screens/home/";
 import Anatomy from "./screens/anatomy/";
@@ -168,7 +169,7 @@ const Drawer = DrawerNavigator(
     NHToast: { screen: NHToast },
     Actionsheet: { screen: Actionsheet },
     NHAccordion: { screen: NHAccordion },
-    NHDatePicker: { screen: NHDatePicker }
+    NHDatePicker: { screen: NHDatePicker },
   },
   {
     initialRouteName: "Home",
@@ -229,9 +230,9 @@ const AppNavigator = StackNavigator(
 
     FixedLabel: { screen: FixedLabel },
     InlineLabel: { screen: InlineLabel },
-    Profile: {screen:Profile},
-    Login: {screen:Login},
-    Register: {screen:Register},
+    Profile: { screen: Profile },
+    Login: { screen: Login },
+    Register: { screen: Register },
     FloatingLabel: { screen: FloatingLabel },
     PlaceholderLabel: { screen: PlaceholderLabel },
     StackedLabel: { screen: StackedLabel },
@@ -307,7 +308,9 @@ const AppNavigator = StackNavigator(
     AccordionIcon: { screen: AccordionIcon },
     AccordionIconStyle: { screen: AccordionIconStyle },
     AccordionHeaderContentStyle: { screen: AccordionHeaderContentStyle },
-    AccordionCustomHeaderContent: { screen: AccordionCustomHeaderContent }
+    AccordionCustomHeaderContent: { screen: AccordionCustomHeaderContent },
+
+    myToko: { screen: myToko }
   },
   {
     initialRouteName: "Drawer",
