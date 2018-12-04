@@ -111,6 +111,7 @@ import Profile from "./screens/form/profil";
 import Login from "./screens/form/login";
 import Register from "./screens/form/register";
 import myToko from "./screens/toko/myToko";
+import DetailProduk from "./screens/produk/detail";
 
 import Home from "./screens/home/";
 import Anatomy from "./screens/anatomy/";
@@ -140,6 +141,7 @@ import NHToast from "./screens/toast/";
 import Actionsheet from "./screens/actionsheet";
 import NHAccordion from "./screens/accordion/";
 import NHDatePicker from "./screens/datepicker/";
+import Produk from "./screens/produk/";
 
 const Drawer = DrawerNavigator(
   {
@@ -170,6 +172,8 @@ const Drawer = DrawerNavigator(
     Actionsheet: { screen: Actionsheet },
     NHAccordion: { screen: NHAccordion },
     NHDatePicker: { screen: NHDatePicker },
+    Produk: { screen: Produk },
+    DetailProduk: { screen: DetailProduk }
   },
   {
     initialRouteName: "Home",
@@ -310,7 +314,8 @@ const AppNavigator = StackNavigator(
     AccordionHeaderContentStyle: { screen: AccordionHeaderContentStyle },
     AccordionCustomHeaderContent: { screen: AccordionCustomHeaderContent },
 
-    myToko: { screen: myToko }
+    myToko: { screen: myToko },
+    DetailProduk: {screen: DetailProduk}
   },
   {
     initialRouteName: "Drawer",
