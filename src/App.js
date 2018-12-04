@@ -109,7 +109,8 @@ import AccordionHeaderContentStyle from "./screens/accordion/accordion-header-co
 import AccordionCustomHeaderContent from "./screens/accordion/accordion-custom-header-content";
 import Profile from "./screens/form/profil";
 import Login from "./screens/form/login";
-import Register from "./screens/form/register"
+import Register from "./screens/form/register";
+import DetailProduk from "./screens/produk/detail";
 
 import Home from "./screens/home/";
 import Anatomy from "./screens/anatomy/";
@@ -139,6 +140,7 @@ import NHToast from "./screens/toast/";
 import Actionsheet from "./screens/actionsheet";
 import NHAccordion from "./screens/accordion/";
 import NHDatePicker from "./screens/datepicker/";
+import Produk from "./screens/produk/";
 
 const Drawer = DrawerNavigator(
   {
@@ -168,7 +170,9 @@ const Drawer = DrawerNavigator(
     NHToast: { screen: NHToast },
     Actionsheet: { screen: Actionsheet },
     NHAccordion: { screen: NHAccordion },
-    NHDatePicker: { screen: NHDatePicker }
+    NHDatePicker: { screen: NHDatePicker },
+    Produk: { screen: Produk },
+    DetailProduk: { screen: DetailProduk }
   },
   {
     initialRouteName: "Home",
@@ -307,7 +311,8 @@ const AppNavigator = StackNavigator(
     AccordionIcon: { screen: AccordionIcon },
     AccordionIconStyle: { screen: AccordionIconStyle },
     AccordionHeaderContentStyle: { screen: AccordionHeaderContentStyle },
-    AccordionCustomHeaderContent: { screen: AccordionCustomHeaderContent }
+    AccordionCustomHeaderContent: { screen: AccordionCustomHeaderContent },
+    DetailProduk: {screen: DetailProduk}
   },
   {
     initialRouteName: "Drawer",
