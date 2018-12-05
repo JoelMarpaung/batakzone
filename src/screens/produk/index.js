@@ -38,7 +38,7 @@ const produk2 = require("../../../assets/produk2.jpg");
 const produk3 = require("../../../assets/produk3.jpg");
 const produk4 = require("../../../assets/produk4.jpg");
 
-class Home extends Component {
+class Produk extends Component {
   render() {
     return (
       <Container>
@@ -209,4 +209,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default Produk;
