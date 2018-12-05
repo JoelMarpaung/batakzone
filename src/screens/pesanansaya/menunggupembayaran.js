@@ -80,7 +80,7 @@ class MenungguPembayaran extends React.Component {
             {/* <CardItem style={{ paddingVertical: 0 }}> */}
               <Right>
               <Button transparent>
-              <Text style={{marginLeft:200,color:}}>Tracking Barang</Text>
+              <Text style={{marginLeft:200}}>Tracking Barang</Text>
               </Button>
               </Right>
             {/* </CardItem> */}
