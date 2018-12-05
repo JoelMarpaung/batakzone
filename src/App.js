@@ -112,6 +112,9 @@ import Login from "./screens/form/login";
 import Register from "./screens/form/register"
 
 import Home from "./screens/home/";
+import PesananSaya from "./screens/pesanansaya/";
+import PesananSaya1 from "./screens/pesanansaya/screeen2/"
+import menunggupembayaran from "./screens/pesanansaya/menunggupembayaran/"
 import Anatomy from "./screens/anatomy/";
 import Footer from "./screens/footer/";
 import NHBadge from "./screens/badge/";
@@ -143,6 +146,9 @@ import NHDatePicker from "./screens/datepicker/";
 const Drawer = DrawerNavigator(
   {
     Home: { screen: Home },
+    PesananSaya: { screen: PesananSaya },
+    PesananSaya1: { screen: PesananSaya1 },
+    menunggupembayaran: { screen: menunggupembayaran },
     Anatomy: { screen: Anatomy },
     Header: { screen: Header },
     Footer: { screen: Footer },
