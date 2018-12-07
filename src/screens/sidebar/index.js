@@ -30,7 +30,7 @@ const datas = [
   },
   {
     name: "Pesanan Saya",
-    route: "Anatomy",
+    route: "PesananSaya",
     icon: "cart",
     bg: "#8E171B"
   },

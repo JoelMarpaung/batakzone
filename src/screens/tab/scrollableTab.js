@@ -35,19 +35,19 @@ class BasicTab extends Component {
         </Header>
 
         <Tabs renderTabBar={() => <ScrollableTab />}>
-          <Tab heading="Tab1">
+          <Tab heading="Menunggu Pembayaran">
             <TabOne />
           </Tab>
-          <Tab heading="Tab2">
+          <Tab heading="Dalam Perjalanan">
             <TabTwo />
           </Tab>
-          <Tab heading="Tab3">
+          <Tab heading="Konfirmasi Barang">
             <TabThree />
           </Tab>
-          <Tab heading="Tab4">
+          <Tab heading="Refund">
             <TabFour />
           </Tab>
-          <Tab heading="Tab5">
+          <Tab heading="Selesai">
             <TabFive />
           </Tab>
         </Tabs>

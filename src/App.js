@@ -114,6 +114,13 @@ import myToko from "./screens/toko/myToko";
 import DetailProduk from "./screens/produk/detail";
 
 import Home from "./screens/home/";
+import PesananSaya from "./screens/pesanansaya/";
+import PesananSaya1 from "./screens/pesanansaya/screeen2/";
+import menunggupembayaran from "./screens/pesanansaya/menunggupembayaran/";
+import konfirmasibarang from "./screens/pesanansaya/konfirmasibarang/";
+import Refund from "./screens/pesanansaya/refund/";
+import Selesai from "./screens/pesanansaya/selesai";
+import Dibatalkan from "./screens/pesanansaya/dibatalkan";
 import Anatomy from "./screens/anatomy/";
 import Footer from "./screens/footer/";
 import NHBadge from "./screens/badge/";
@@ -144,10 +151,19 @@ import NHDatePicker from "./screens/datepicker/";
 import Produk from "./screens/produk/";
 import AddProduk from "./screens/produk/add";
 import Informasi from "./screens/toko/infomasi";
+import Keranjang from "./screens/keranjang/";
 
 const Drawer = DrawerNavigator(
   {
     Home: { screen: Home },
+    ScrollableTab: { screen: ScrollableTab},
+    PesananSaya: { screen: PesananSaya },
+    PesananSaya1: { screen: PesananSaya1 },
+    menunggupembayaran: { screen: menunggupembayaran },
+    konfirmasibarang: { screen: konfirmasibarang },
+    Refund: { screen: Refund },
+    Selesai: { screen: Selesai },
+    Dibatalkan: { screen: Dibatalkan },
     Anatomy: { screen: Anatomy },
     Header: { screen: Header },
     Footer: { screen: Footer },
@@ -181,7 +197,8 @@ const Drawer = DrawerNavigator(
     DetailProduk: { screen: DetailProduk },
     AddProduk: { screen: AddProduk},
     myToko: { screen: myToko },
-    Informasi:{screen:Informasi}
+    Informasi:{screen:Informasi},
+    Keranjang: { screen: Keranjang }
   },
   {
     initialRouteName: "Home",
