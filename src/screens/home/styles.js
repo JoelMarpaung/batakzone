@@ -78,6 +78,8 @@ export default {
     backgroundColor: "#8E171B",
     marginTop:10,
     padding:20
-  }
-
+  },
+  buttonTracking:{
+    marginLeft:200
+  },
 };

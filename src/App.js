@@ -110,9 +110,17 @@ import AccordionCustomHeaderContent from "./screens/accordion/accordion-custom-h
 import Profile from "./screens/form/profil";
 import Login from "./screens/form/login";
 import Register from "./screens/form/register";
+import myToko from "./screens/toko/myToko";
 import DetailProduk from "./screens/produk/detail";
 
 import Home from "./screens/home/";
+import PesananSaya from "./screens/pesanansaya/";
+import PesananSaya1 from "./screens/pesanansaya/screeen2/";
+import menunggupembayaran from "./screens/pesanansaya/menunggupembayaran/";
+import konfirmasibarang from "./screens/pesanansaya/konfirmasibarang/";
+import Refund from "./screens/pesanansaya/refund/";
+import Selesai from "./screens/pesanansaya/selesai";
+import Dibatalkan from "./screens/pesanansaya/dibatalkan";
 import Anatomy from "./screens/anatomy/";
 import Footer from "./screens/footer/";
 import NHBadge from "./screens/badge/";
@@ -146,6 +154,14 @@ import Keranjang from "./screens/keranjang/";
 const Drawer = DrawerNavigator(
   {
     Home: { screen: Home },
+    ScrollableTab: { screen: ScrollableTab},
+    PesananSaya: { screen: PesananSaya },
+    PesananSaya1: { screen: PesananSaya1 },
+    menunggupembayaran: { screen: menunggupembayaran },
+    konfirmasibarang: { screen: konfirmasibarang },
+    Refund: { screen: Refund },
+    Selesai: { screen: Selesai },
+    Dibatalkan: { screen: Dibatalkan },
     Anatomy: { screen: Anatomy },
     Header: { screen: Header },
     Footer: { screen: Footer },
@@ -235,9 +251,9 @@ const AppNavigator = StackNavigator(
 
     FixedLabel: { screen: FixedLabel },
     InlineLabel: { screen: InlineLabel },
-    Profile: {screen:Profile},
-    Login: {screen:Login},
-    Register: {screen:Register},
+    Profile: { screen: Profile },
+    Login: { screen: Login },
+    Register: { screen: Register },
     FloatingLabel: { screen: FloatingLabel },
     PlaceholderLabel: { screen: PlaceholderLabel },
     StackedLabel: { screen: StackedLabel },
@@ -314,6 +330,8 @@ const AppNavigator = StackNavigator(
     AccordionIconStyle: { screen: AccordionIconStyle },
     AccordionHeaderContentStyle: { screen: AccordionHeaderContentStyle },
     AccordionCustomHeaderContent: { screen: AccordionCustomHeaderContent },
+
+    myToko: { screen: myToko },
     DetailProduk: {screen: DetailProduk}
   },
   {
