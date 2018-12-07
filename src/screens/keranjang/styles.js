@@ -84,6 +84,12 @@ export default {
     marginTop:20,
     borderColor:"#8E171B",
     borderWidth:2
+  },
+  buttonLanjut:{
+     alignSelf: "flex-end",
+       color: "white",
+       backgroundColor: "#8E171B",
+       marginTop: 15
   }
 
 };
