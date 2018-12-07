@@ -141,6 +141,7 @@ import Actionsheet from "./screens/actionsheet";
 import NHAccordion from "./screens/accordion/";
 import NHDatePicker from "./screens/datepicker/";
 import Produk from "./screens/produk/";
+import Keranjang from "./screens/keranjang/";
 
 const Drawer = DrawerNavigator(
   {
@@ -172,7 +173,8 @@ const Drawer = DrawerNavigator(
     NHAccordion: { screen: NHAccordion },
     NHDatePicker: { screen: NHDatePicker },
     Produk: { screen: Produk },
-    DetailProduk: { screen: DetailProduk }
+    DetailProduk: { screen: DetailProduk },
+    Keranjang: { screen: Keranjang }
   },
   {
     initialRouteName: "Home",
