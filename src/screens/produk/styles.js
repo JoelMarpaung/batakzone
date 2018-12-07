@@ -83,6 +83,34 @@ export default {
     marginTop:20,
     borderColor:"#8E171B",
     borderWidth:2
+  },
+  textTitle:{
+    fontSize:25,
+    color:"#8E171B",
+    margin:5
+  },
+  inputNumeric:{
+    marginLeft:25,
+    width:135,
+  },
+  iconImage:{
+    alignSelf:"center"
+  },
+  card:{
+    margin:100
+  },
+  textImage:{
+    alignSelf: "center",
+    color:"#8E171B"
+  },
+  buttonBottom:{
+    alignSelf:"center",
+    color:"white",
+    backgroundColor: "#8E171B",
+    marginTop:10,
+    paddingLeft:80,
+    paddingRight:80,
+    padding:10
   }
 
 };

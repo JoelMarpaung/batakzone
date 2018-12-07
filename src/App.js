@@ -149,6 +149,8 @@ import Actionsheet from "./screens/actionsheet";
 import NHAccordion from "./screens/accordion/";
 import NHDatePicker from "./screens/datepicker/";
 import Produk from "./screens/produk/";
+import AddProduk from "./screens/produk/add";
+import Informasi from "./screens/toko/infomasi";
 import Keranjang from "./screens/keranjang/";
 
 const Drawer = DrawerNavigator(
@@ -188,8 +190,14 @@ const Drawer = DrawerNavigator(
     Actionsheet: { screen: Actionsheet },
     NHAccordion: { screen: NHAccordion },
     NHDatePicker: { screen: NHDatePicker },
+    Profile: { screen: Profile },
+    Login: { screen: Login },
+    Register: { screen: Register },
     Produk: { screen: Produk },
     DetailProduk: { screen: DetailProduk },
+    AddProduk: { screen: AddProduk},
+    myToko: { screen: myToko },
+    Informasi:{screen:Informasi},
     Keranjang: { screen: Keranjang }
   },
   {
@@ -332,7 +340,10 @@ const AppNavigator = StackNavigator(
     AccordionCustomHeaderContent: { screen: AccordionCustomHeaderContent },
 
     myToko: { screen: myToko },
-    DetailProduk: {screen: DetailProduk}
+    Informasi:{screen:Informasi},
+
+    DetailProduk: {screen: DetailProduk},
+    AddProduk: { screen: AddProduk},
   },
   {
     initialRouteName: "Drawer",
