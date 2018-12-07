@@ -23,12 +23,12 @@ import { black } from "ansi-colors";
 
 const produk2 = require("../../../assets/produk2.jpg");
 
-class PesananSaya1 extends React.Component {
+class Dibatalkan extends React.Component {
   render() {
     return (
       <Container>
         <Content padder>
-        <Text style={{fontWeight:'bold',marginTop:10, fontSize:18}}>Total: Rp. 270.000</Text>
+        <Text style={{fontWeight:'bold',marginTop:10, fontSize:20,marginLeft:270}}>Dibatalkan</Text>
         <Card style={styles.mt}>
           <H3 style={{color:"#8E171B",marginLeft:10,marginTop:10, fontWeight:'bold'}}>Toko Bintang Terang</H3>
             <CardItem cardBody>
@@ -49,27 +49,23 @@ class PesananSaya1 extends React.Component {
                 </Body>
                   </Left>
             </CardItem>
-
             <CardItem style={{ paddingVertical: 0 }}>
               <Left>
+              <Text style={{marginLeft:50}}>2</Text>
                 <Button transparent>
-                  <Icon active name="md-remove" />
-                  <Text style={{marginLeft:30}}>2</Text>
+                  {/* <Icon active name="pluscircle" /> */}
                 </Button>
               </Left>
               <Body>
                 <Button transparent>
-                  <Icon active name="minuscircleo" />
+                  {/* <Icon active name="minuscircleo" /> */}
                 </Button>
               </Body>
-              <Right>
-                <Button transparent>
-              <Icon style={{color:'black'}} active name="trash"/>
-              </Button>
-              </Right>
             </CardItem>
           </Card>
 
+
+        <Text style={{fontWeight:'bold',marginTop:10, fontSize:20,marginLeft:270}}>Dibatalkan</Text>
         <Card style={styles.mt}>
           <H3 style={{color:"#8E171B",marginLeft:10,marginTop:10, fontWeight:'bold'}}>Toko Horas</H3>
             <CardItem cardBody>
@@ -94,27 +90,20 @@ class PesananSaya1 extends React.Component {
             <CardItem style={{ paddingVertical: 0 }}>
               <Left>
                 <Button transparent>
-                  <Icon active name="md-remove" />
-                  <Text style={{marginLeft:30}}>2</Text>
+                  {/* <Icon active name="md-remove" /> */}
+                  <Text>2</Text>
                 </Button>
               </Left>
               <Body>
                 <Button transparent>
-                <Icon active name="minuscircleo" />
                 </Button>
               </Body>
-              <Right>
-              <Button transparent>
-              <Icon style={{color:'black'}} active name="trash" />
-              </Button>
-              </Right>
             </CardItem>
           </Card>
-
         </Content>
       </Container>
     );
   }
 }
 
-export default PesananSaya1;
+export default Dibatalkan;

@@ -20,10 +20,9 @@ import {
 import styles from "./styles";
 import { black } from "ansi-colors";
 
-
 const produk2 = require("../../../assets/produk2.jpg");
 
-class MenungguPembayaran extends React.Component {
+class KonfirmasiBarang extends React.Component {
   render() {
     return (
       <Container>
@@ -50,9 +49,9 @@ class MenungguPembayaran extends React.Component {
 
             {/* <CardItem style={{ paddingVertical: 0 }}> */}
               <Right>
-              <Button transparent>
-              <Text style={styles.buttonTracking}>Tracking Barang</Text>
-              </Button>
+            <Button rounded style={styles.buttonBottom}>
+            <H3 style={{color:"white"}}>Barang telah diterima</H3>
+          </Button>
               </Right>
             {/* </CardItem> */}
           </Card>
@@ -63,4 +62,4 @@ class MenungguPembayaran extends React.Component {
   }
 }
 
-export default MenungguPembayaran;
+export default KonfirmasiBarang;

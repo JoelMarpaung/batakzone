@@ -22,13 +22,21 @@ export default {
     text2: {
       fontWeight: 'bold',
       marginLeft:40,
-      marginBottom:30,
       fontSize:20
+    },
+    buttonBottom:{
+      alignSelf:"center",
+      color:"white",
+      backgroundColor: "#8E171B",
+      marginTop:15,
+      marginLeft:150,
+      marginBottom:10,
+      padding:8
     },
     text3: {
       fontWeight: 'bold',
       marginLeft: 40,
-      marginBottom:30,
+      marginBottom:70,
       fontSize:20
     },
     segment: {
@@ -38,6 +46,9 @@ export default {
     },
     mt:{
       marginTop:20
+    },
+    buttonTracking:{
+      marginLeft:200
     }
   };
   

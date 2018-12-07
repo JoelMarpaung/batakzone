@@ -21,15 +21,17 @@ import styles from "./styles";
 import { black } from "ansi-colors";
 
 
-const produk2 = require("../../../assets/produk2.jpg");
+const produk4 = require("../../../assets/produk4.jpg");
 
-class MenungguPembayaran extends React.Component {
+class Refund extends React.Component {
   render() {
     return (
       <Container>
         <Content padder>
+        <Text style={{fontWeight:'bold',marginTop:10, fontSize:20}}>Transaksi</Text>
+        <Text style={{fontWeight:'bold',fontSize:16}}>ID12367719</Text>
         <Card style={styles.mt}>
-          <H3 style={{color:"#8E171B",marginLeft:10,marginTop:10, fontWeight:'bold'}}>Toko Horas</H3>
+          <H3 style={{color:"#8E171B",marginLeft:10,marginTop:10, fontWeight:'bold'}}>Toko Bintang Terang</H3>
             <CardItem cardBody>
             <Left>
               <Image
@@ -41,19 +43,18 @@ class MenungguPembayaran extends React.Component {
                   marginTop:20,
                   flexDirection: "row"
                 }}
-                source={produk2}/>
+                source={produk4}/>
                 <Body>
-                  <Text style={styles.text2}>Gaun Ulos</Text>
+                  <Text style={styles.text2}>Baju Batik Gorga</Text>
+                  <Text style={styles.text3}>Rp. 150.000</Text>
                 </Body>
                   </Left>
             </CardItem>
 
             {/* <CardItem style={{ paddingVertical: 0 }}> */}
-              <Right>
-              <Button transparent>
-              <Text style={styles.buttonTracking}>Tracking Barang</Text>
-              </Button>
-              </Right>
+            <Right>
+              <Text style={{alignSelf:"center", fontSize:20, marginTop:30}}>Resi Barang</Text>
+            </Right>
             {/* </CardItem> */}
           </Card>
 
@@ -63,4 +64,4 @@ class MenungguPembayaran extends React.Component {
   }
 }
 
-export default MenungguPembayaran;
+export default Refund;

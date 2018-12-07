@@ -115,8 +115,12 @@ import DetailProduk from "./screens/produk/detail";
 
 import Home from "./screens/home/";
 import PesananSaya from "./screens/pesanansaya/";
-import PesananSaya1 from "./screens/pesanansaya/screeen2/"
-import menunggupembayaran from "./screens/pesanansaya/menunggupembayaran/"
+import PesananSaya1 from "./screens/pesanansaya/screeen2/";
+import menunggupembayaran from "./screens/pesanansaya/menunggupembayaran/";
+import konfirmasibarang from "./screens/pesanansaya/konfirmasibarang/";
+import Refund from "./screens/pesanansaya/refund/";
+import Selesai from "./screens/pesanansaya/selesai";
+import Dibatalkan from "./screens/pesanansaya/dibatalkan";
 import Anatomy from "./screens/anatomy/";
 import Footer from "./screens/footer/";
 import NHBadge from "./screens/badge/";
@@ -149,9 +153,14 @@ import Produk from "./screens/produk/";
 const Drawer = DrawerNavigator(
   {
     Home: { screen: Home },
+    ScrollableTab: { screen: ScrollableTab},
     PesananSaya: { screen: PesananSaya },
     PesananSaya1: { screen: PesananSaya1 },
     menunggupembayaran: { screen: menunggupembayaran },
+    konfirmasibarang: { screen: konfirmasibarang },
+    Refund: { screen: Refund },
+    Selesai: { screen: Selesai },
+    Dibatalkan: { screen: Dibatalkan },
     Anatomy: { screen: Anatomy },
     Header: { screen: Header },
     Footer: { screen: Footer },

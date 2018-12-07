@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 import { Image } from "react-native";
+import { View, StyleSheet, Dimensions } from 'react-native';
+import { TabView, TabBar, SceneMap } from 'react-native-tab-view';
 import {
   H3,
   Container,
   Segment,
+  ScrollableTab,
   Header,
   Title,
   Content,
@@ -14,21 +17,32 @@ import {
   Text,
   Thumbnail,
   Left,
+  Tabs,
+  Tab,
   Body,
   Right
 } from "native-base";
+import MenungguPembayaran from "./menunggupembayaran";
+import KonfirmasiBarang from "./konfirmasibarang";
+import PesananSaya1 from "./screeen2";
+import Refund from "./refund";
+import Selesai from "./selesai";
+import Dibatalkan from "./dibatalkan";
+
 import styles from "./styles";
 import { black } from "ansi-colors";
 
 
 const produk2 = require("../../../assets/produk2.jpg");
+const produk4 = require("../../../assets/produk4.jpg");
 
-class PesananSaya extends React.Component {
+export default class PesananSaya extends React.Component {
+  
   render() {
     const {navigate} =this.props.navigation;
     return (
       <Container>
-           <Header style={styles.header}>
+           <Header style={{backgroundColor: "#8E171B"}}>
           <Left>
             <Button
               transparent
@@ -48,102 +62,28 @@ class PesananSaya extends React.Component {
               </Button>
           </Right>
         </Header>
-        <Segment>
-          <Button first onPress={()=>navigate('PesananSaya1',{name: 'Go'})}>
-          <Text style={styles.segment}>Menunggu Pembayaran</Text>
-          </Button>
-          <Button  onPress={()=>navigate('menunggupembayaran',{name: 'menunggupembayaran'})}>
-            <Text style={styles.segment}>Dalam Perjalanan</Text>
-          </Button>
-        </Segment>
-        {/* <Content padder>
-        <Text style={{fontWeight:'bold',marginTop:10, fontSize:18}}>Total: Rp. 270.000</Text>
-        <Card style={styles.mt}>
-          <H3 style={{color:"#8E171B",marginLeft:10,marginTop:10, fontWeight:'bold'}}>Toko Bintang Terang</H3>
-            <CardItem cardBody>
-            <Left>
-              <Image
-                style={{
-                  resizeMode: "cover",
-                  width: 120,
-                  height: 140,
-                  marginLeft: 10,
-                  marginTop:20,
-                  flexDirection: "row"
-                }}
-                source={produk2}/>
-                <Body>
-                  <Text style={styles.text2}>Baju Batik Gorga</Text>
-                  <Text style={styles.text3}>Rp. 150.000</Text>
-                </Body>
-                  </Left>
-            </CardItem>
 
-            <CardItem style={{ paddingVertical: 0 }}>
-              <Left>
-                <Button transparent>
-                  <Icon active name="" />
-                  <Text>4923 Likes</Text>
-                </Button>
-              </Left>
-              <Body>
-                <Button transparent>
-                  <Icon active name="chatbubbles" />
-                  <Text>89 Comments</Text>
-                </Button>
-              </Body>
-              <Right>
-              <Icon style={{color:'black'}} active name="trash"/>
-              </Right>
-            </CardItem>
-          </Card>
-
-        <Card style={styles.mt}>
-          <H3 style={{color:"#8E171B",marginLeft:10,marginTop:10, fontWeight:'bold'}}>Toko Horas</H3>
-            <CardItem cardBody>
-            <Left>
-              <Image
-                style={{
-                  resizeMode: "cover",
-                  width: 120,
-                  height: 140,
-                  marginLeft: 10,
-                  marginTop:20,
-                  flexDirection: "row"
-                }}
-                source={produk2}/>
-                <Body>
-                  <Text style={styles.text2}>Gaun Ulos</Text>
-                  <Text style={styles.text3}>Rp. 120.000</Text>
-                </Body>
-                  </Left>
-            </CardItem>
-
-            <CardItem style={{ paddingVertical: 0 }}>
-              <Left>
-                <Button transparent>
-                  <Icon active name="" />
-                  <Text>4923 Likes</Text>
-                </Button>
-              </Left>
-              <Body>
-                <Button transparent>
-                  <Icon active name="chatbubbles" />
-                  <Text>89 Comments</Text>
-                </Button>
-              </Body>
-              <Right>
-              <Button transparent>
-              <Icon style={{color:'black'}} active name="trash" />
-              </Button>
-              </Right>
-            </CardItem>
-          </Card>
-
-        </Content> */}
+      <Tabs renderTabBar={() => <ScrollableTab />}>
+          <Tab heading="Menunggu Pembayaran">
+            <PesananSaya1 />
+          </Tab>
+          <Tab heading="Dalam Perjalanan">
+            <MenungguPembayaran />
+          </Tab>
+          <Tab heading="Konfirmasi Barang">
+            <KonfirmasiBarang />
+          </Tab>
+          <Tab heading="Refund">
+            <Refund />
+          </Tab>
+          <Tab heading="Selesai">
+            <Selesai />
+          </Tab>
+          <Tab heading="Pesanan Dibatalkan">
+          <Dibatalkan />
+          </Tab>
+        </Tabs>
       </Container>
     );
   }
 }
-
-export default PesananSaya;
