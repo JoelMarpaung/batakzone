@@ -18,7 +18,8 @@ import {
   Col,
   Row,
   H3,
-  Fab
+  Fab,
+  Segment
 } from "native-base";
 import styles from "./styles";
 const toko = require("../../../assets/toko.png");
@@ -27,19 +28,20 @@ const produk2 = require("../../../assets/produk2.jpg");
 const produk3 = require("../../../assets/produk3.jpg");
 
 const data = {
-  shop: "#",
-  edit: "#"
+  shop: "myToko",
+  tambah: "AddProduk",
+  informasi: "Informasi"
 };
+
 class myToko extends Component {
   render() {
     return (
       <Container style={styles.container}>
-        <Header style={styles.header}>
+        <Header hasSegment style={styles.header}>
           <Left>
             <Button
               transparent
-              onPress={() => this.props.navigation.navigate("DrawerOpen")}
-            >
+              onPress={() => this.props.navigation.navigate("DrawerOpen")}>
               <Icon name="ios-menu" />
             </Button>
           </Left>
@@ -59,14 +61,19 @@ class myToko extends Component {
             </Button>
           </Right>
         </Header>
-        <Fab style={styles.buttonText}
-          onPress={() => this.props.navigation.navigate("#")}>
-          <Icon name="add" />
-        </Fab>
+        <Segment style={styles.header}>
+          <Button first active>
+            <Text style={styles.textMenu}>My Toko</Text>
+          </Button>
+          <Button last
+            onPress={() => this.props.navigation.navigate(data.informasi)}>
+            <Text>Informasi</Text>
+          </Button>
+        </Segment>
         <Content>
           <Card style={styles.card}>
             <Body>
-              <CardItem style={styles.card} button onPress={() => this.props.navigation.navigate(data.shop)}>
+              <CardItem style={styles.card}>
                 <Left>
                   <Thumbnail source={toko} />
                   <Body>
@@ -74,18 +81,9 @@ class myToko extends Component {
                     <Text note style={styles.text}>jln.SM.Raja Institut Teknologi Del</Text>
                     <Text note style={styles.text}>Sitoluama, Laguboti 22381</Text>
                     <Text note style={styles.text}>082368725961</Text>
-
                   </Body>
                 </Left>
               </CardItem>
-              <Row>
-                <Button rounded transparent style={styles.button}>
-                  <Text style={styles.textMenu}>My Toko</Text>
-                </Button>
-                <Button rounded transparent style={styles.button}>
-                  <Text style={styles.textMenu}>Informasi</Text>
-                </Button>
-              </Row>
             </Body>
           </Card>
           <Card>
@@ -97,7 +95,9 @@ class myToko extends Component {
                     <H3 style={{ fontSize: 15, fontWeight: "bold" }}>{"\n"}Rp. 300.000,00</H3>
                     <Text style={{ fontSize: 13, color: "black" }}>Batik Ulos</Text>
                     <Row>
-                      <Button rounded small style={styles.card}>
+                      <Button rounded small style={styles.card}
+                        onPress={() => this.props.navigation.navigate(data.tambah)}>
+
                         <Text style={styles.textButtoon}>Edit</Text>
                       </Button>
                       <Button rounded small>
@@ -234,6 +234,10 @@ class myToko extends Component {
             </Grid>
           </Card>
         </Content>
+        <Fab onPress={() => this.props.navigation.navigate(data.tambah)}
+          style={styles.buttonText}>
+          <Icon name="add" />
+        </Fab>
       </Container>
     );
   }
