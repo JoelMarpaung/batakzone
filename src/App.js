@@ -114,6 +114,7 @@ import DetailProduk from "./screens/produk/detail";
 
 import Home from "./screens/home/";
 import Anatomy from "./screens/anatomy/";
+import Katalog from "./screens/catalogProduct/";
 import Footer from "./screens/footer/";
 import NHBadge from "./screens/badge/";
 import NHButton from "./screens/button/";
@@ -145,6 +146,7 @@ import Produk from "./screens/produk/";
 const Drawer = DrawerNavigator(
   {
     Home: { screen: Home },
+    Katalog: { screen: Katalog },
     Anatomy: { screen: Anatomy },
     Header: { screen: Header },
     Footer: { screen: Footer },
