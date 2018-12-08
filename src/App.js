@@ -110,9 +110,17 @@ import AccordionCustomHeaderContent from "./screens/accordion/accordion-custom-h
 import Profile from "./screens/form/profil";
 import Login from "./screens/form/login";
 import Register from "./screens/form/register";
+import myToko from "./screens/toko/myToko";
 import DetailProduk from "./screens/produk/detail";
 
 import Home from "./screens/home/";
+import PesananSaya from "./screens/pesanansaya/";
+import PesananSaya1 from "./screens/pesanansaya/screeen2/";
+import menunggupembayaran from "./screens/pesanansaya/menunggupembayaran/";
+import konfirmasibarang from "./screens/pesanansaya/konfirmasibarang/";
+import Refund from "./screens/pesanansaya/refund/";
+import Selesai from "./screens/pesanansaya/selesai";
+import Dibatalkan from "./screens/pesanansaya/dibatalkan";
 import Anatomy from "./screens/anatomy/";
 import Katalog from "./screens/catalogProduct/";
 import Footer from "./screens/footer/";
@@ -142,11 +150,22 @@ import Actionsheet from "./screens/actionsheet";
 import NHAccordion from "./screens/accordion/";
 import NHDatePicker from "./screens/datepicker/";
 import Produk from "./screens/produk/";
+import AddProduk from "./screens/produk/add";
+import Informasi from "./screens/toko/infomasi";
+import Keranjang from "./screens/keranjang/";
 
 const Drawer = DrawerNavigator(
   {
     Home: { screen: Home },
     Katalog: { screen: Katalog },
+    ScrollableTab: { screen: ScrollableTab},
+    PesananSaya: { screen: PesananSaya },
+    PesananSaya1: { screen: PesananSaya1 },
+    menunggupembayaran: { screen: menunggupembayaran },
+    konfirmasibarang: { screen: konfirmasibarang },
+    Refund: { screen: Refund },
+    Selesai: { screen: Selesai },
+    Dibatalkan: { screen: Dibatalkan },
     Anatomy: { screen: Anatomy },
     Header: { screen: Header },
     Footer: { screen: Footer },
@@ -173,8 +192,15 @@ const Drawer = DrawerNavigator(
     Actionsheet: { screen: Actionsheet },
     NHAccordion: { screen: NHAccordion },
     NHDatePicker: { screen: NHDatePicker },
+    Profile: { screen: Profile },
+    Login: { screen: Login },
+    Register: { screen: Register },
     Produk: { screen: Produk },
-    DetailProduk: { screen: DetailProduk }
+    DetailProduk: { screen: DetailProduk },
+    AddProduk: { screen: AddProduk},
+    myToko: { screen: myToko },
+    Informasi:{screen:Informasi},
+    Keranjang: { screen: Keranjang }
   },
   {
     initialRouteName: "Home",
@@ -235,9 +261,9 @@ const AppNavigator = StackNavigator(
 
     FixedLabel: { screen: FixedLabel },
     InlineLabel: { screen: InlineLabel },
-    Profile: {screen:Profile},
-    Login: {screen:Login},
-    Register: {screen:Register},
+    Profile: { screen: Profile },
+    Login: { screen: Login },
+    Register: { screen: Register },
     FloatingLabel: { screen: FloatingLabel },
     PlaceholderLabel: { screen: PlaceholderLabel },
     StackedLabel: { screen: StackedLabel },
@@ -314,7 +340,12 @@ const AppNavigator = StackNavigator(
     AccordionIconStyle: { screen: AccordionIconStyle },
     AccordionHeaderContentStyle: { screen: AccordionHeaderContentStyle },
     AccordionCustomHeaderContent: { screen: AccordionCustomHeaderContent },
-    DetailProduk: {screen: DetailProduk}
+
+    myToko: { screen: myToko },
+    Informasi:{screen:Informasi},
+
+    DetailProduk: {screen: DetailProduk},
+    AddProduk: { screen: AddProduk},
   },
   {
     initialRouteName: "Drawer",

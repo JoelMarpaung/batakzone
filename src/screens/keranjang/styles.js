@@ -60,26 +60,36 @@ export default {
   produk:{
     flexDirection:"row",
     padding:20,
-    marginLeft:20,
+    marginLeft:10,
     marginBottom:30
   },
   produkImage:{
-    alignSelf:"center",
-    height:150,
-    width: deviceWidth / 4
+    height:100,
+    width: deviceWidth / 6,
+    marginLeft:30
   },
   produkButton:{
     flexDirection:"column",
-    height:200,
+    height:150,
   },
-  buttonBottom:{
+  buttonProduk:{
     alignSelf:"center",
     color:"white",
     backgroundColor: "#8E171B",
-    marginTop:10,
-    padding:20
+    marginTop:20
   },
-  buttonTracking:{
-    marginLeft:200
+  buttonKeranjang:{
+    alignSelf:"center",
+    backgroundColor: "white",
+    marginTop:20,
+    borderColor:"#8E171B",
+    borderWidth:2
   },
+  buttonLanjut:{
+     alignSelf: "flex-end",
+       color: "white",
+       backgroundColor: "#8E171B",
+       marginTop: 15
+  }
+
 };

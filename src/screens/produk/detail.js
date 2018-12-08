@@ -5,7 +5,6 @@ import {
   Title,
   Content,
   Button,
-  Icon,
   Input,
   Left,
   Right,
@@ -14,6 +13,7 @@ import {
   H3,
   H2,
   Item,
+  Icon,
   Badge,
   Thumbnail,
   Card,
@@ -31,7 +31,6 @@ const cardImage = require("../../../assets/detail-produk.png");
 const produk1 = require("../../../assets/produk1.jpg");
 const produk2 = require("../../../assets/produk2.jpg");
 const produk3 = require("../../../assets/produk3.jpg");
-const produk4 = require("../../../assets/produk4.jpg");
 const dataArray = [
   { title: "Deskripsi", content: "Lorem ipsum dolor sit amet" },
   { title: "Makna", content: "Lorem ipsum dolor sit amet" },
@@ -85,7 +84,13 @@ class DetailProduk extends Component {
               <Grid>
               <Row><Text style={{color:"#8E171B", fontWeight:"bold"}}>Batik Motif Ulos</Text></Row>
               <Row><Text style={{fontWeight:"bold"}}>Rp 100.000</Text></Row>
-              <Row><Text style={{color:"#8E171B", fontWeight:"bold"}}>Rating</Text></Row>
+              <Row><Text style={{color:"#8E171B", fontWeight:"bold"}}>Rating   </Text>
+                   <Icon name="star" style={{fontSize:20}}/>
+                   <Icon name="star" style={{fontSize:20}}/>
+                   <Icon name="star" style={{fontSize:20}}/>
+                   <Icon name="star" style={{fontSize:20}}/>
+                   <Icon name="star" style={{fontSize:20}}/>
+              </Row>
               </Grid>
               </CardItem>
             </Card>
@@ -105,7 +110,8 @@ class DetailProduk extends Component {
               </Grid>
               </CardItem>
             </Card>
-            <Accordion dataArray={dataArray} />
+
+            <Accordion dataArray={dataArray}/>
 
             <Card style={styles.mt}>
             <Grid>
@@ -139,7 +145,7 @@ class DetailProduk extends Component {
           <Col><Button small rounded style={styles.buttonKeranjang}>
             <Text style={{color:"#8E171B", fontSize:10}}>Tambah ke Keranjang</Text>
           </Button></Col>
-          <Col><Button small rounded style={styles.buttonProduk}>
+          <Col><Button small rounded style={styles.buttonProduk} onPress={()=>this.props.navigation.navigate("Keranjang")}>
             <Text style={{color:"white", fontSize:10}}>Beli Sekarang</Text>
           </Button></Col>
           </Row>

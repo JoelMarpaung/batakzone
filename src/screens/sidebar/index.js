@@ -30,7 +30,7 @@ const datas = [
   },
   {
     name: "Pesanan Saya",
-    route: "Anatomy",
+    route: "PesananSaya",
     icon: "cart",
     bg: "#8E171B"
   },
@@ -54,7 +54,7 @@ const datas = [
   },
   {
     name: "My Toko",
-    route: "Anatomy",
+    route: "myToko",
     icon: "outlet",
     bg: "#8E171B"
   },
