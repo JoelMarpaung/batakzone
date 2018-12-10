@@ -42,7 +42,7 @@ const datas = [
   },
   {
     name: "Favorit",
-    route: "Anatomy",
+    route: "Favorit",
     icon: "star",
     bg: "#8E171B"
   },
