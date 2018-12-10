@@ -64,12 +64,12 @@ const datas = [
     icon: "people",
     bg: "#8E171B"
   },
-  // {
-  //   name: "Anatomy",
-  //   route: "Anatomy",
-  //   icon: "phone-portrait",
-  //   bg: "#C5F442"
-  // },
+  {
+    name: "Katalog Produk",
+    route: "Katalog",
+    icon: "phone-portrait",
+    bg: "#C5F442"
+  },
   // {
   //   name: "Header",
   //   route: "Header",

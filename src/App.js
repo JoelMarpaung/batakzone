@@ -123,6 +123,7 @@ import Selesai from "./screens/pesanansaya/selesai";
 import Dibatalkan from "./screens/pesanansaya/dibatalkan";
 import Favorit from "./screens/favorit/";
 import Anatomy from "./screens/anatomy/";
+import Katalog from "./screens/catalogProduct/";
 import Footer from "./screens/footer/";
 import NHBadge from "./screens/badge/";
 import NHButton from "./screens/button/";
@@ -157,6 +158,7 @@ import Keranjang from "./screens/keranjang/";
 const Drawer = DrawerNavigator(
   {
     Home: { screen: Home },
+    Katalog: { screen: Katalog },
     ScrollableTab: { screen: ScrollableTab},
     PesananSaya: { screen: PesananSaya },
     PesananSaya1: { screen: PesananSaya1 },
