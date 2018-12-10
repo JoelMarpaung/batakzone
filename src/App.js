@@ -121,6 +121,7 @@ import konfirmasibarang from "./screens/pesanansaya/konfirmasibarang/";
 import Refund from "./screens/pesanansaya/refund/";
 import Selesai from "./screens/pesanansaya/selesai";
 import Dibatalkan from "./screens/pesanansaya/dibatalkan";
+import Favorit from "./screens/favorit/";
 import Anatomy from "./screens/anatomy/";
 import Katalog from "./screens/catalogProduct/";
 import Footer from "./screens/footer/";
@@ -167,6 +168,7 @@ const Drawer = DrawerNavigator(
     Refund: { screen: Refund },
     Selesai: { screen: Selesai },
     Dibatalkan: { screen: Dibatalkan },
+    Favorit: { screen: Favorit },
     Anatomy: { screen: Anatomy },
     Header: { screen: Header },
     Footer: { screen: Footer },
