@@ -30,7 +30,8 @@ const produk3 = require("../../../assets/produk3.jpg");
 const data = {
   shop: "myToko",
   tambah: "AddProduk",
-  informasi: "Informasi"
+  informasi: "Informasi",
+  edit:"#"
 };
 
 class myToko extends Component {
@@ -96,8 +97,7 @@ class myToko extends Component {
                     <Text style={{ fontSize: 13, color: "black" }}>Batik Ulos</Text>
                     <Row>
                       <Button rounded small style={styles.card}
-                        onPress={() => this.props.navigation.navigate(data.tambah)}>
-
+                        onPress={() => this.props.navigation.navigate(data.informasi)}>
                         <Text style={styles.textButtoon}>Edit</Text>
                       </Button>
                       <Button rounded small>

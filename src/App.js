@@ -153,6 +153,7 @@ import Produk from "./screens/produk/";
 import AddProduk from "./screens/produk/add";
 import Informasi from "./screens/toko/infomasi";
 import Keranjang from "./screens/keranjang/";
+import RefundBarang from "./screens/produk/refund";
 
 const Drawer = DrawerNavigator(
   {
@@ -200,7 +201,8 @@ const Drawer = DrawerNavigator(
     AddProduk: { screen: AddProduk},
     myToko: { screen: myToko },
     Informasi:{screen:Informasi},
-    Keranjang: { screen: Keranjang }
+    Keranjang: { screen: Keranjang },
+    RefundBarang: {screen: RefundBarang},
   },
   {
     initialRouteName: "Home",
@@ -346,6 +348,7 @@ const AppNavigator = StackNavigator(
 
     DetailProduk: {screen: DetailProduk},
     AddProduk: { screen: AddProduk},
+    RefundBarang:{screen: RefundBarang},
   },
   {
     initialRouteName: "Drawer",
