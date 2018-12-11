@@ -103,7 +103,7 @@ class Keranjang extends Component {
 
 
           <Grid>
-          <Row><Text style={{fontWeight:"bold", color:"#8E171B", marginTop:10}}>Toko Bintang Horas</Text>
+          <Row><Text style={{fontWeight:"bold", color:"#8E171B", marginTop:10}}>Toko Horas</Text>
           </Row>
           <Card style={{padding:10}}>
           <Row>
@@ -174,7 +174,7 @@ class Keranjang extends Component {
               <H3 style={{fontSize:18, fontWeight:"bold"}}>{"\n"}Total : Rp. 950.000,00</H3>
             </Col>
             <Col>
-              <Button small rounded style={styles.buttonLanjut}>
+              <Button small rounded style={styles.buttonLanjut} onPress={()=>this.props.navigation.navigate("CheckOut")}>
             <Text style={{color:"white"}}>Lanjutkan</Text>
             </Button>
             </Col>

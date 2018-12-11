@@ -6,20 +6,15 @@ import {
   Content,
   Button,
   Icon,
-  Input,
   Left,
   Right,
   Body,
   Text,
   H3,
   H2,
-  Item,
   Badge,
-  Thumbnail,
   Card,
-  CardItem,
-  ListItem,
-  List
+  CardItem
 } from "native-base";
 import { Image, Dimensions } from 'react-native';
 import { Grid, Row, Col } from "react-native-easy-grid";

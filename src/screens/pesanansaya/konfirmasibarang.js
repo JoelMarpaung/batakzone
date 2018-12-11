@@ -3,33 +3,30 @@ import { Image } from "react-native";
 import {
   H3,
   Container,
-  Segment,
-  Header,
-  Title,
   Content,
   Button,
-  Icon,
   Card,
   CardItem,
   Text,
-  Thumbnail,
   Left,
   Body,
-  Right
 } from "native-base";
 import styles from "./styles";
-import { black } from "ansi-colors";
 import { Row } from "react-native-easy-grid";
 import Review from "./review";
 
 const produk2 = require("../../../assets/produk2.jpg");
 
+<<<<<<< HEAD
 const data = {
   review: "Review"
 };
 
 class KonfirmasiBarang extends Component {
 
+=======
+class KonfirmasiBarang extends Component {
+>>>>>>> bbf51cc72d13b204c7ab781aefb4fb81c56e2fd3
   render() {
     return (
       <Container>
@@ -54,7 +51,8 @@ class KonfirmasiBarang extends Component {
               </Left>
             </CardItem>
             <Row style={styles.row}>
-              <Button rounded style={styles.buttonKeranjang}>
+              <Button onPress={() => this.props.navigate("RefundBarang")} 
+              rounded style={styles.buttonKeranjang}>
                 <Text style={{ color: "#8E171B", fontSize: 12 }}>Refund</Text>
               </Button>
               <Button rounded style={styles.buttonBottom}onPress={this.props.navigation.navigate(data.review)}>
@@ -62,7 +60,6 @@ class KonfirmasiBarang extends Component {
               </Button>
             </Row>
           </Card>
-
         </Content>
       </Container>
     );

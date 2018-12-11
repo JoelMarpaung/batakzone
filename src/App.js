@@ -155,7 +155,9 @@ import Produk from "./screens/produk/";
 import AddProduk from "./screens/produk/add";
 import Informasi from "./screens/toko/infomasi";
 import Keranjang from "./screens/keranjang/";
+import CheckOut from "./screens/checkout/";
 import RefundBarang from "./screens/produk/refund";
+
 
 const Drawer = DrawerNavigator(
   {
@@ -202,6 +204,8 @@ const Drawer = DrawerNavigator(
     Register: { screen: Register },
     Produk: { screen: Produk },
     DetailProduk: { screen: DetailProduk },
+    Keranjang: { screen: Keranjang },
+    CheckOut: { screen: CheckOut },
     AddProduk: { screen: AddProduk},
     myToko: { screen: myToko },
     Informasi:{screen:Informasi},
@@ -348,6 +352,8 @@ const AppNavigator = StackNavigator(
     AccordionCustomHeaderContent: { screen: AccordionCustomHeaderContent },
 
     myToko: { screen: myToko },
+    DetailProduk: {screen: DetailProduk},
+    CheckOut: { screen: CheckOut }, 
     Informasi:{screen:Informasi},
 
     DetailProduk: {screen: DetailProduk},
