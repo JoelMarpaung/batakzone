@@ -11,7 +11,8 @@ export default {
         backgroundColor:"#8E171B"
     },
     card:{
-      backgroundColor: "#8E171B"
+      backgroundColor: "#8E171B",
+      margin:2
     },
     button:{
       backgroundColor: "#fff",

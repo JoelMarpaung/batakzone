@@ -25,21 +25,13 @@ export default {
       fontSize:20
     },
     buttonBottom:{
+      alignSelf:"center",
+      color:"white",
       backgroundColor: "#8E171B",
-      marginLeft:20,
-      paddingLeft:10,
-      paddingRight:10
-    },
-    buttonKeranjang:{
-      backgroundColor: "white",
-      marginLeft:20,
-      borderColor:"#8E171B",
-      borderWidth:2,
-      paddingLeft:40,
-      paddingRight:40
-    },
-    row:{
-      marginTop:10
+      marginTop:15,
+      marginLeft:150,
+      marginBottom:10,
+      padding:8
     },
     text3: {
       fontWeight: 'bold',
@@ -53,7 +45,9 @@ export default {
       color:'black'
     },
     mt:{
-      marginTop:20
+      marginTop:20,
+      width: 140,
+      height: 220,
     },
     buttonTracking:{
       marginLeft:200

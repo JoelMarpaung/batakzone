@@ -121,7 +121,9 @@ import konfirmasibarang from "./screens/pesanansaya/konfirmasibarang/";
 import Refund from "./screens/pesanansaya/refund/";
 import Selesai from "./screens/pesanansaya/selesai";
 import Dibatalkan from "./screens/pesanansaya/dibatalkan";
+import Favorit from "./screens/favorit/";
 import Anatomy from "./screens/anatomy/";
+import Katalog from "./screens/catalogProduct/";
 import Footer from "./screens/footer/";
 import NHBadge from "./screens/badge/";
 import NHButton from "./screens/button/";
@@ -149,12 +151,17 @@ import Actionsheet from "./screens/actionsheet";
 import NHAccordion from "./screens/accordion/";
 import NHDatePicker from "./screens/datepicker/";
 import Produk from "./screens/produk/";
+import AddProduk from "./screens/produk/add";
+import Informasi from "./screens/toko/infomasi";
 import Keranjang from "./screens/keranjang/";
 import CheckOut from "./screens/checkout/";
+import RefundBarang from "./screens/produk/refund";
+
 
 const Drawer = DrawerNavigator(
   {
     Home: { screen: Home },
+    Katalog: { screen: Katalog },
     ScrollableTab: { screen: ScrollableTab},
     PesananSaya: { screen: PesananSaya },
     PesananSaya1: { screen: PesananSaya1 },
@@ -163,6 +170,7 @@ const Drawer = DrawerNavigator(
     Refund: { screen: Refund },
     Selesai: { screen: Selesai },
     Dibatalkan: { screen: Dibatalkan },
+    Favorit: { screen: Favorit },
     Anatomy: { screen: Anatomy },
     Header: { screen: Header },
     Footer: { screen: Footer },
@@ -189,10 +197,18 @@ const Drawer = DrawerNavigator(
     Actionsheet: { screen: Actionsheet },
     NHAccordion: { screen: NHAccordion },
     NHDatePicker: { screen: NHDatePicker },
+    Profile: { screen: Profile },
+    Login: { screen: Login },
+    Register: { screen: Register },
     Produk: { screen: Produk },
     DetailProduk: { screen: DetailProduk },
     Keranjang: { screen: Keranjang },
-    CheckOut: { screen: CheckOut }
+    CheckOut: { screen: CheckOut },
+    AddProduk: { screen: AddProduk},
+    myToko: { screen: myToko },
+    Informasi:{screen:Informasi},
+    Keranjang: { screen: Keranjang },
+    RefundBarang: {screen: RefundBarang},
   },
   {
     initialRouteName: "Home",
@@ -335,7 +351,12 @@ const AppNavigator = StackNavigator(
 
     myToko: { screen: myToko },
     DetailProduk: {screen: DetailProduk},
-    CheckOut: { screen: CheckOut } 
+    CheckOut: { screen: CheckOut }, 
+    Informasi:{screen:Informasi},
+
+    DetailProduk: {screen: DetailProduk},
+    AddProduk: { screen: AddProduk},
+    RefundBarang:{screen: RefundBarang},
   },
   {
     initialRouteName: "Drawer",
