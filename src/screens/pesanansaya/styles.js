@@ -24,6 +24,13 @@ export default {
       marginLeft:40,
       fontSize:20
     },
+    h4:{
+      fontWeight: 'bold',
+      fontSize: 18
+    },  
+    h6:{
+      fontSize: 16
+    },
     buttonBottom:{
       alignSelf:"center",
       color:"white",
