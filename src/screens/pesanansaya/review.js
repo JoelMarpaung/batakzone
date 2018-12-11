@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Image } from "react-native";
-import { TextField } from 'react-native-material-textfield';
 import {
   H3,
   Container,

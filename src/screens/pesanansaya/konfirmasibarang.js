@@ -17,16 +17,7 @@ import Review from "./review";
 
 const produk2 = require("../../../assets/produk2.jpg");
 
-<<<<<<< HEAD
-const data = {
-  review: "Review"
-};
-
 class KonfirmasiBarang extends Component {
-
-=======
-class KonfirmasiBarang extends Component {
->>>>>>> bbf51cc72d13b204c7ab781aefb4fb81c56e2fd3
   render() {
     return (
       <Container>
@@ -55,7 +46,7 @@ class KonfirmasiBarang extends Component {
               rounded style={styles.buttonKeranjang}>
                 <Text style={{ color: "#8E171B", fontSize: 12 }}>Refund</Text>
               </Button>
-              <Button rounded style={styles.buttonBottom}onPress={this.props.navigation.navigate(data.review)}>
+              <Button rounded style={styles.buttonBottom}>
                 <Text style={{ color: "white", fontSize: 12 }}>Barang diterima</Text>
               </Button>
             </Row>
