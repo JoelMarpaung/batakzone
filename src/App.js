@@ -150,6 +150,7 @@ import NHAccordion from "./screens/accordion/";
 import NHDatePicker from "./screens/datepicker/";
 import Produk from "./screens/produk/";
 import Keranjang from "./screens/keranjang/";
+import CheckOut from "./screens/checkout/";
 
 const Drawer = DrawerNavigator(
   {
@@ -190,7 +191,8 @@ const Drawer = DrawerNavigator(
     NHDatePicker: { screen: NHDatePicker },
     Produk: { screen: Produk },
     DetailProduk: { screen: DetailProduk },
-    Keranjang: { screen: Keranjang }
+    Keranjang: { screen: Keranjang },
+    CheckOut: { screen: CheckOut }
   },
   {
     initialRouteName: "Home",
@@ -332,7 +334,8 @@ const AppNavigator = StackNavigator(
     AccordionCustomHeaderContent: { screen: AccordionCustomHeaderContent },
 
     myToko: { screen: myToko },
-    DetailProduk: {screen: DetailProduk}
+    DetailProduk: {screen: DetailProduk},
+    CheckOut: { screen: CheckOut } 
   },
   {
     initialRouteName: "Drawer",

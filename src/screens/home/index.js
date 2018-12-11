@@ -20,7 +20,7 @@ import {
   CardItem,
   ListItem,
   List
-} from "native-base";
+} from "naative-base";
 import { Image, Dimensions } from 'react-native';
 import { Grid, Row, Col } from "react-native-easy-grid";
 
