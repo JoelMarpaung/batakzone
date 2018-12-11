@@ -26,6 +26,7 @@ import MenungguPembayaran from "./menunggupembayaran";
 import KonfirmasiBarang from "./konfirmasibarang";
 import PesananSaya1 from "./screeen2";
 import Refund from "./refund";
+import Review from "./review";
 import Selesai from "./selesai";
 import Dibatalkan from "./dibatalkan";
 
@@ -81,6 +82,9 @@ export default class PesananSaya extends React.Component {
           </Tab>
           <Tab heading="Pesanan Dibatalkan">
           <Dibatalkan />
+          </Tab>
+          <Tab heading="Review">
+          <Review />
           </Tab>
         </Tabs>
       </Container>

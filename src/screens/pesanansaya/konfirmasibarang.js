@@ -20,10 +20,16 @@ import {
 import styles from "./styles";
 import { black } from "ansi-colors";
 import { Row } from "react-native-easy-grid";
+import Review from "./review";
 
 const produk2 = require("../../../assets/produk2.jpg");
 
-class KonfirmasiBarang extends React.Component {
+const data = {
+  review: "Review"
+};
+
+class KonfirmasiBarang extends Component {
+
   render() {
     return (
       <Container>
@@ -51,7 +57,7 @@ class KonfirmasiBarang extends React.Component {
               <Button rounded style={styles.buttonKeranjang}>
                 <Text style={{ color: "#8E171B", fontSize: 12 }}>Refund</Text>
               </Button>
-              <Button rounded style={styles.buttonBottom}>
+              <Button rounded style={styles.buttonBottom}onPress={this.props.navigation.navigate(data.review)}>
                 <Text style={{ color: "white", fontSize: 12 }}>Barang diterima</Text>
               </Button>
             </Row>

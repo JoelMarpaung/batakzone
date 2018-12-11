@@ -124,6 +124,7 @@ import Dibatalkan from "./screens/pesanansaya/dibatalkan";
 import Favorit from "./screens/favorit/";
 import Anatomy from "./screens/anatomy/";
 import Katalog from "./screens/catalogProduct/";
+import Review from "./screens/pesanansaya/review";
 import Footer from "./screens/footer/";
 import NHBadge from "./screens/badge/";
 import NHButton from "./screens/button/";
@@ -169,6 +170,7 @@ const Drawer = DrawerNavigator(
     Selesai: { screen: Selesai },
     Dibatalkan: { screen: Dibatalkan },
     Favorit: { screen: Favorit },
+    Review: { screen: Review },
     Anatomy: { screen: Anatomy },
     Header: { screen: Header },
     Footer: { screen: Footer },

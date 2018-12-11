@@ -57,6 +57,10 @@ export default {
     },
     buttonTracking:{
       marginLeft:200
+    },
+    review: {
+      width: 380,
+      height: 200,
     }
   };
   
