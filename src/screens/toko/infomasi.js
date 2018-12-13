@@ -12,7 +12,8 @@ import {
   Tabs,
   ScrollableTab,
   Segment,
-  Text
+  Text,
+  TabHeading
 } from "native-base";
 import styles from "./styles";
 import PesananBaru from "./pesananBaru";
@@ -63,19 +64,29 @@ class Informasi extends Component {
           </Button>
         </Segment>
         <Tabs transparent renderTabBar={() => <ScrollableTab style={styles.header} />}>
-          <Tab style={styles.header} heading="Pesanan Baru">
+          <Tab heading={
+            <TabHeading style={{backgroundColor:"#8E171B"}}><Text style={{color:"#fff"}}>Pesanan Baru</Text></TabHeading>
+          }>
             <PesananBaru style={styles.header} />
           </Tab>
-          <Tab style={styles.header} heading="Siap Dikirim">
+          <Tab heading={
+            <TabHeading style={{backgroundColor:"#8E171B"}}><Text style={{color:"#fff"}}>Siap Dikirim</Text></TabHeading>
+          }>
             <SiapDikirim style={styles.header}/>
           </Tab>
-          <Tab style={styles.header} heading="Sedang Dikirim">
+          <Tab heading={
+            <TabHeading style={{backgroundColor:"#8E171B"}}><Text style={{color:"#fff"}}>Sedang Dikirim</Text></TabHeading>
+          }>
             <SedangDikirim style={styles.header}/>
           </Tab>
-          <Tab style={styles.header} heading="Sampai Tujuan">
+          <Tab heading={
+            <TabHeading style={{backgroundColor:"#8E171B"}}><Text style={{color:"#fff"}}>Sampai Tujuan</Text></TabHeading>
+          }>
             <SampaiTujuan style={styles.header}/>
           </Tab>
-          <Tab style={styles.header} heading="Transaksi">
+          <Tab heading={
+            <TabHeading style={{backgroundColor:"#8E171B"}}><Text style={{color:"#fff"}}>Transaksi</Text></TabHeading>
+          }>
             <Transaksi style={styles.header}/>
           </Tab>
         </Tabs>
@@ -84,4 +95,4 @@ class Informasi extends Component {
   }
 }
 
-export default Informasi;  
+export default Informasi;

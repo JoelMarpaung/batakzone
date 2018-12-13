@@ -13,7 +13,7 @@ import {
 } from "native-base";
 import styles from "./styles";
 import { Row } from "react-native-easy-grid";
-import Review from "./review";
+
 
 const produk2 = require("../../../assets/produk2.jpg");
 
@@ -23,7 +23,7 @@ class KonfirmasiBarang extends Component {
       <Container>
         <Content padder>
           <Card style={styles.mt}>
-            <H3 style={{ color: "#8E171B", marginLeft: 10, marginTop: 10, fontWeight: 'bold' }}>Toko Horas</H3>
+            <H3 style={{ color: "#8E171B", marginLeft: 10, marginTop: 10, fontWeight: "bold" }}>Toko Horas</H3>
             <CardItem cardBody>
               <Left>
                 <Image
@@ -42,7 +42,7 @@ class KonfirmasiBarang extends Component {
               </Left>
             </CardItem>
             <Row style={styles.row}>
-              <Button onPress={() => this.props.navigate("RefundBarang")} 
+              <Button onPress={() => this.props.navigation.navigate("RefundBarang")}
               rounded style={styles.buttonKeranjang}>
                 <Text style={{ color: "#8E171B", fontSize: 12 }}>Refund</Text>
               </Button>

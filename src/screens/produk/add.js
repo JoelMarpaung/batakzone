@@ -20,7 +20,7 @@ import {
   Textarea,
   ListItem,
   Radio,
-  H3 
+  H3
 } from "native-base";
 import styles from "./styles";
 
@@ -71,11 +71,11 @@ class AddProduk extends Component {
             </Body>
             <Card>
               <CardItem style={styles.card}>
-                  <Icon name="camera" style={styles.iconImage} />
-                  <Text style={styles.textImage}>Gambar Produk</Text>
+                <Icon name="camera" style={styles.iconImage} />
+                <Text style={styles.textImage}>Gambar Produk</Text>
               </CardItem>
             </Card>
-            
+
             <Item stackedLabel>
               <Label>Nama Produk</Label>
               <Input />
@@ -176,7 +176,7 @@ class AddProduk extends Component {
             </Item>
           </Form>
           <Button rounded style={styles.buttonBottom}>
-            <H3 style={{color:"white"}}>Tambah Produk</H3>
+            <H3 style={{ color: "white" }}>Tambah Produk</H3>
           </Button>
         </Content>
       </Container>
@@ -184,4 +184,4 @@ class AddProduk extends Component {
   }
 }
 
-export default AddProduk;  
+export default AddProduk;
