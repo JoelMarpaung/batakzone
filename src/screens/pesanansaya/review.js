@@ -19,7 +19,8 @@ import {
   Textarea,
   Left,
   Body,
-  Right
+  Right,
+  Row
 } from "native-base";
 import styles from "./styles";
 import { black } from "ansi-colors";
@@ -34,6 +35,13 @@ class Review extends Component {
       <Container>
         <Content padder>
         <Form>
+          <Row style={{marginTop:10}}>
+            <Icon name="star" style={{fontSize:20}}/>
+            <Icon name="star" style={{fontSize:20}}/>
+            <Icon name="star" style={{fontSize:20}}/>
+            <Icon name="star" style={{fontSize:20}}/>
+            <Icon name="star" style={{fontSize:20}}/>
+          </Row>
           <Label style={{marginTop:30, color:"black", fontSize: 18, marginBottom:15}}>Ulasan</Label>
                 <Textarea rowSpan={10} style={{borderColor:"gray", borderWidth:1}} />
             <Button rounded style={styles.buttonBottom}>

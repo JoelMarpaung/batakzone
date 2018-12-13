@@ -37,6 +37,13 @@ export default {
       paddingLeft:10,
       paddingRight:10
     },
+    buttonBawah:{
+      backgroundColor: "#8E171B",
+      marginLeft:100,
+      paddingLeft:50,
+      paddingRight:50,
+      marginTop:20
+    },
     buttonKeranjang:{
       backgroundColor: "white",
       marginLeft:20,
