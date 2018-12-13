@@ -80,30 +80,22 @@ class CheckOut extends Component {
                 </Button>
               </Col>
           </Row>
-          </Card>
+          </Card>          
 
-          <Grid style={styles.mt}>
+          
           <Card style={{padding:10}}>
+          <Grid>
           <Row>
           <Col size={1}>
             <Image style={styles.produkImage} source={produk1}/>
           </Col>
           <Col>
-          <H3 style={{fontSize:18, fontWeight:"bold"}}>{"\n"}Batik Motif Ulos</H3>
+          <H3 style={{fontSize:18, fontWeight:"bold"}}>{"\n"}Batik Ulos</H3>
           <Text style={{fontSize:15,fontWeight:"bold", color:"black"}}>Rp. 300.000,00</Text>
           </Col>
           </Row>
-          <Row>
-          <Col>
-          <Right>
-            <Button transparent style={{marginLeft:100}}>
-              <Icon type="MaterialIcons" name="delete-sweep" style={{color:"gray"}}/>
-            </Button>
-          </Right>
-          </Col>
-          </Row>
-          </Card>
           </Grid>
+          </Card>
           
           </Content>
         </Container>

@@ -20,7 +20,8 @@ import {
   Tabs,
   Tab,
   Body,
-  Right
+  Right,
+  TabHeading
 } from "native-base";
 import MenungguPembayaran from "./menunggupembayaran";
 import KonfirmasiBarang from "./konfirmasibarang";
@@ -64,26 +65,40 @@ export default class PesananSaya extends React.Component {
           </Right>
         </Header>
 
-      <Tabs renderTabBar={() => <ScrollableTab />}>
-          <Tab heading="Menunggu Pembayaran">
-            <PesananSaya1 />
+      <Tabs transparent renderTabBar={() => <ScrollableTab/>}>
+          <Tab heading={
+              <TabHeading style={{backgroundColor:"#8E171B"}}><Text style={{color:"#fff"}}>Menunggu Pembayaran</Text></TabHeading>
+          }>
+          <PesananSaya1 />
           </Tab>
-          <Tab heading="Dalam Perjalanan">
-            <MenungguPembayaran />
+          <Tab heading={
+              <TabHeading style={{backgroundColor:"#8E171B"}}><Text style={{color:"#fff"}}>Dalam Perjalanan</Text></TabHeading>
+          }>
+          <MenungguPembayaran />
           </Tab>
-          <Tab heading="Konfirmasi Barang">
-            <KonfirmasiBarang />
+          <Tab heading={
+              <TabHeading style={{backgroundColor:"#8E171B"}}><Text style={{color:"#fff"}}>Konfirmasi Barang</Text></TabHeading>
+          }>
+          <KonfirmasiBarang />
           </Tab>
-          <Tab heading="Refund">
-            <Refund />
+          <Tab heading={
+              <TabHeading style={{backgroundColor:"#8E171B"}}><Text style={{color:"#fff"}}>Refund</Text></TabHeading>
+          }>
+          <Refund />
           </Tab>
-          <Tab heading="Selesai">
-            <Selesai />
+          <Tab heading={
+              <TabHeading style={{backgroundColor:"#8E171B"}}><Text style={{color:"#fff"}}>Selesai</Text></TabHeading>
+          }>
+          <Selesai />
           </Tab>
-          <Tab heading="Pesanan Dibatalkan">
+          <Tab heading={
+              <TabHeading style={{backgroundColor:"#8E171B"}}><Text style={{color:"#fff"}}>Pesanan Dibatalkan</Text></TabHeading>
+          }>
           <Dibatalkan />
           </Tab>
-          <Tab heading="Review">
+          <Tab heading={
+              <TabHeading style={{backgroundColor:"#8E171B"}}><Text style={{color:"#fff"}}>Review</Text></TabHeading>
+          }>
           <Review />
           </Tab>
         </Tabs>

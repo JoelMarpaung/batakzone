@@ -16,7 +16,7 @@ import {
   CardItem,
   Text,
   Thumbnail,
-  Input,
+  Textarea,
   Left,
   Body,
   Right
@@ -35,9 +35,7 @@ class Review extends Component {
         <Content padder>
         <Form>
           <Label style={{marginTop:30, color:"black", fontSize: 18, marginBottom:15}}>Ulasan</Label>
-              <Card style={styles.review}>
-                <Input keyboardType="string" />
-              </Card>
+                <Textarea rowSpan={10} style={{borderColor:"gray", borderWidth:1}} />
             <Button rounded style={styles.buttonBottom}>
                 <Text style={{ color: "white", fontSize: 12}}>Simpan</Text>
               </Button>

@@ -67,9 +67,8 @@ export default {
         marginBottom: 30
     },
     produkImage: {
-        height: 100,
-        width: deviceWidth / 6,
-        marginLeft: 30
+        height: 150,
+        width: deviceWidth / 3
     },
     produkButton: {
         flexDirection: "column",
