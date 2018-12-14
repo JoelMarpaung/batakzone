@@ -138,53 +138,75 @@ class Katalog extends Component {
           <Grid>
             <Row>
               <Col style={styles.colImage}>
-                <Image source={produk1} style={styles.imageContainer} />
+              <Button transparent style={styles.produkButton} onPress={() => this.props.navigation.navigate("DetailProduk")}>
+                <Image source={produk1} style={styles.produkImage} />
                 <Text style={styles.menuText}>Rp. 400.000,00</Text>
                 <Text style={styles.menuText}>Gaun Ulos</Text>
+                </Button>
+              </Col>
+
+              <Col style={[styles.colImage, styles.contentSpace]}>
+              <Button transparent style={styles.produkButton} onPress={() => this.props.navigation.navigate("DetailProduk")}>  
+                <Image source={produk1} style={styles.produkImage} />
+                <Text style={styles.menuText}>Rp. 400.000,00</Text>
+                <Text style={styles.menuText}>Gaun Ulos</Text>
+             
+              </Button>
               </Col>
               <Col style={[styles.colImage, styles.contentSpace]}>
-                <Image source={produk1} style={styles.imageContainer} />
+              <Button transparent style={styles.produkButton} onPress={() => this.props.navigation.navigate("DetailProduk")}>  
+                
+                <Image source={produk1} style={styles.produkImage} />
                 <Text style={styles.menuText}>Rp. 400.000,00</Text>
                 <Text style={styles.menuText}>Gaun Ulos</Text>
-              </Col>
-              <Col style={[styles.colImage, styles.contentSpace]}>
-                <Image source={produk1} style={styles.imageContainer} />
-                <Text style={styles.menuText}>Rp. 400.000,00</Text>
-                <Text style={styles.menuText}>Gaun Ulos</Text>
+                </Button>
               </Col>
             </Row>
             <Row>
               <Col style={styles.colImage}>
-                <Image source={produk1} style={styles.imageContainer} />
+              <Button transparent style={styles.produkButton} onPress={() => this.props.navigation.navigate("DetailProduk")}>  
+                
+                <Image source={produk1} style={styles.produkImage} />
                 <Text style={styles.menuText}>Rp. 400.000,00</Text>
                 <Text style={styles.menuText}>Gaun Ulos</Text>
+                </Button>
               </Col>
               <Col style={[styles.colImage, styles.contentSpace]}>
-                <Image source={produk1} style={styles.imageContainer} />
+              <Button transparent style={styles.produkButton} onPress={() => this.props.navigation.navigate("DetailProduk")}>
+                <Image source={produk1} style={styles.produkImage} />
                 <Text style={styles.menuText}>Rp. 400.000,00</Text>
                 <Text style={styles.menuText}>Gaun Ulos</Text>
+                </Button>
               </Col>
               <Col style={[styles.colImage, styles.contentSpace]}>
-                <Image source={produk1} style={styles.imageContainer} />
+              <Button transparent style={styles.produkButton} onPress={() => this.props.navigation.navigate("DetailProduk")}>
+                <Image source={produk1} style={styles.produkImage} />
                 <Text style={styles.menuText}>Rp. 400.000,00</Text>
                 <Text style={styles.menuText}>Gaun Ulos</Text>
+                </Button>
               </Col>
             </Row>
             <Row>
               <Col style={styles.colImage}>
-                <Image source={produk1} style={styles.imageContainer} />
+                <Image source={produk1} style={styles.produkImage} />
+                <Button transparent style={styles.produkButton} onPress={() => this.props.navigation.navigate("DetailProduk")}>
                 <Text style={styles.menuText}>Rp. 400.000,00</Text>
                 <Text style={styles.menuText}>Gaun Ulos</Text>
+                </Button>
               </Col>
               <Col style={[styles.colImage, styles.contentSpace]}>
-                <Image source={produk1} style={styles.imageContainer} />
+              <Button transparent style={styles.produkButton} onPress={() => this.props.navigation.navigate("DetailProduk")}>
+                <Image source={produk1} style={styles.produkImage} />
                 <Text style={styles.menuText}>Rp. 400.000,00</Text>
                 <Text style={styles.menuText}>Gaun Ulos</Text>
+                </Button>
               </Col>
               <Col style={[styles.colImage, styles.contentSpace]}>
-                <Image source={produk1} style={styles.imageContainer} />
+              <Button transparent style={styles.produkButton} onPress={() => this.props.navigation.navigate("DetailProduk")}>
+                <Image source={produk1} style={styles.produkImage} />
                 <Text style={styles.menuText}>Rp. 400.000,00</Text>
                 <Text style={styles.menuText}>Gaun Ulos</Text>
+                </Button>
               </Col>
             </Row>
           </Grid>

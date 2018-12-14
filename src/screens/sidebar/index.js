@@ -24,7 +24,7 @@ const datas = [
   },
   {
     name: "Kategori",
-    route: "Anatomy",
+    route: "Kategori",
     icon: "grid",
     bg: "#8E171B"
   },
