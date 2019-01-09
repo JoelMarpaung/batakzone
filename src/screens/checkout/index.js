@@ -14,28 +14,32 @@ import {
   Icon,
   H3,
   H2,
-  Item,
   Badge,
   Thumbnail,
   Card,
-  Label,
-  CardItem,
-  ListItem,
-  List,
-  Accordion
+  Picker,
+  Form
 } from "native-base"; 
 import { Image, Dimensions } from 'react-native';
 import { Grid, Row, Col } from "react-native-easy-grid";
 
 import styles from "./styles";
 const deviceWidth = Dimensions.get("window").width;
-const cardImage = require("../../../assets/detail-produk.png");
 const produk1 = require("../../../assets/produk1.jpg");
-const produk2 = require("../../../assets/produk2.jpg");
-const produk3 = require("../../../assets/produk3.jpg");
-const produk4 = require("../../../assets/produk4.jpg");
+const Item = Picker.Item;
 
 class CheckOut extends Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        selected1: "key1"
+      };
+    }
+    onValueChange(value: string) {
+      this.setState({
+        selected1: value
+      });
+    }
     render() {
       return (
         <Container>
@@ -90,13 +94,46 @@ class CheckOut extends Component {
             <Image style={styles.produkImage} source={produk1}/>
           </Col>
           <Col>
-          <H3 style={{fontSize:18, fontWeight:"bold"}}>{"\n"}Batik Ulos</H3>
+          <H3 style={{fontSize:23, fontWeight:"bold", color:"#8E171B"}}>{"\n"}Batik Ulos</H3>
           <Text style={{fontSize:15,fontWeight:"bold", color:"black"}}>Rp. 300.000,00</Text>
           </Col>
           </Row>
           </Grid>
           </Card>
+
+          <Card style={{padding:10}}>
+          <H3 style={{fontSize:15, fontWeight:"bold"}}>Opsi Pengiriman</H3>           
           
+            <Form>
+            <Picker
+              renderHeader={backAction =>
+                <Header style={{ backgroundColor: "#f44242" }}>
+                  <Left>
+                    <Button transparent onPress={backAction}>
+                      <Icon name="arrow-back" style={{ color: "#fff" }} />
+                    </Button>
+                  </Left>
+                  <Body style={{ flex: 3 }}>
+                    <Title>Your Header</Title>
+                  </Body>
+                  <Right />
+                </Header>}
+              mode="dropdown"
+              iosIcon={<Icon name="ios-arrow-down-outline" />}
+              style={{ width: undefined }}
+              selectedValue={this.state.selected1}
+              onValueChange={this.onValueChange.bind(this)}
+            >
+              <Item label="Wallet" value="key0" />
+              <Item label="ATM Card" value="key1" />
+              <Item label="Debit Card" value="key2" />
+              <Item label="Credit Card" value="key3" />
+              <Item label="Net Banking" value="key4" />
+            </Picker>
+          </Form>
+
+          
+          </Card>
           </Content>
         </Container>
       );
