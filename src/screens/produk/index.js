@@ -118,7 +118,7 @@ class Produk extends Component {
               </Button>
             </Col>
             <Col>
-            <Button transparent style={styles.produkButton}>
+            <Button transparent style={styles.produkButton} onPress={() => this.props.navigation.navigate("DetailProduk")}>
             <Image style={styles.produkImage} source={produk2}/>
             <H3 style={{fontSize:19, fontWeight:"bold"}}>{"\n"}Rp. 400.000,00</H3>
               <Text style={{fontSize:13, color:"black"}}>Gaun Ulos</Text>

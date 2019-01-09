@@ -28,6 +28,15 @@ export default {
     bottom: 6,
     marginTop: 5
   },
+  textMini:{
+    color: "E4E4E4", 
+    button: 1, 
+    marginBottom: 1,
+    fontSize: 1, 
+    alignSelf: "flex-end", 
+
+  },
+
   header:{
     backgroundColor: "#8E171B"
   },
@@ -88,7 +97,7 @@ export default {
   textTitle:{
     fontSize:25,
     color:"#8E171B",
-    margin:5
+    marginTop:10
   },
   inputNumeric:{
     marginLeft:25,

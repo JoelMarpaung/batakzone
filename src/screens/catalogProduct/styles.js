@@ -6,9 +6,8 @@ const deviceWidth = Dimensions.get("window").width;
 export default {
   imageContainer: {
     flex: 1,
-    width:100, 
-    height:100,
-    borderRadius: 5
+    width:null, 
+    height:null
   },
   logoContainer: {
     flex: 1,
@@ -29,6 +28,14 @@ export default {
   },
   header:{
     backgroundColor: "#8E171B"
+  },
+  produkImage:{
+    height:100,
+    width: deviceWidth / 6
+  },
+  produkButton:{
+    flexDirection:"column",
+    height:150,
   },
   title: {
     flex: 1, 

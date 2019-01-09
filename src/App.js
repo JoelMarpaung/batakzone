@@ -112,7 +112,6 @@ import Login from "./screens/form/login";
 import Register from "./screens/form/register";
 import myToko from "./screens/toko/myToko";
 import DetailProduk from "./screens/produk/detail";
-
 import Home from "./screens/home/";
 import PesananSaya from "./screens/pesanansaya/";
 import PesananSaya1 from "./screens/pesanansaya/screeen2/";
@@ -157,12 +156,13 @@ import Informasi from "./screens/toko/infomasi";
 import Keranjang from "./screens/keranjang/";
 import CheckOut from "./screens/checkout/";
 import RefundBarang from "./screens/produk/refund";
-
+import Kategori from "./screens/kategori/";
 
 const Drawer = DrawerNavigator(
   {
     Home: { screen: Home },
     Katalog: { screen: Katalog },
+    Kategori: { screen: Kategori },
     ScrollableTab: { screen: ScrollableTab},
     PesananSaya: { screen: PesananSaya },
     PesananSaya1: { screen: PesananSaya1 },
